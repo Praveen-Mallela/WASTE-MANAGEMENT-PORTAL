@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BuyerDashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  .home{
+    background: url(or.jpg);
+    width: 100%;
+    height: 300vh;
+  }
+  #cr{
+    color:black;
+  }
+#card2{
+    position: absolute;
+    left:20%;
+    top:26%;
+  }
+  #card3{
+    position:  absolute;
+    left:39%;
+    top:26%;
+  }
+  #card4{
+    position:  absolute;
+    left:58%;
+    top:26%;
+  }
+  #card5{
+    position:  absolute;
+    left:77%;
+    top:26%;
+  }
+  #card6{
+    position:  absolute;
+    top:96%;
+  }
+  #card7{
+    position:  absolute;
+    top:96%;
+    left:20%;
+  }
+  #card8{
+    position:  absolute;
+    top:96%;
+    left:39%;
+  }
+  #card9{
+    position:  absolute;
+    top:96%;
+    left:58%;
+  }
+  #card10{
+    position:  absolute;
+    top:96%;
+    left:77%;
+  }
+  #card11{
+    position:  absolute;
+    top:162%;
+  }
+  #card12{
+    position: absolute;
+    left:20%;
+    top:162%;
+  }
+  #card13{
+    position: absolute;
+    left:39%;
+    top:162%;
+  }
+  #card14{
+    position: absolute;
+    left:58%;
+    top:162%;
+  }
+  #card15{
+    position: absolute;
+    left:77%;
+    top:162%;
+  }
+  #card16{
+    position: absolute;
+    top:228%;
+  }
+  #card17{
+    position: absolute;
+    left:20%;
+    top:228%;
+  }
+  #card18{
+    position: absolute;
+    left:39%;
+    top:228%;
+  }
+  #card19{
+    position: absolute;
+    left:58%;
+    top:228%;
+  }
+  #card20{
+    position: absolute;
+    left:77%;
+    top:228%;
+  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width:250px;
+  font-family: arial;
+  position:  absolute;
+  top:26%;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.price {
+    position: relative;
+  color: white;
+  font-size: 22px;
+  background-color: Blue;
+  width:50%;
+  left:20%;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+.checked {
+  color: orange;
+}
+    #in{
+        background-color:grey;
+        font-weight: bold;
+        border: 2px solid grey;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left:96%;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+#info{
+    background-color: grey;
+    border: 2px solid black;
+    top:295%;
+    width: 100%;
+    position:absolute;
+}
+.item active{
+    height:50%;
+}
+#line{
+    border: 1px solid black;
+}
+
+button {
+  background-color: pink;
+  font-weight: bold;
+  border: 2px solid pink;
+  font-size: 17px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#logo{
+    width:8%;
+    height:8%;
+}
+#search{
+    position: absolute;
+    padding:10px 60px 10px 10px;
+    left:65%;
+    top:6%;
+}
+#home{
+left:12%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#about{
+left:20%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#resourse{
+left:30%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#help{
+left:42%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#blog{
+left:50%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#contact{
+left:56%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#sign{
+left:85%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+.bar{
+    background-color: pink;
+}
+#sea{
+    position: absolute;
+    left:81%;
+    top:8%;
+    color:blue;
+}
+#rf{
+    position:absolute;
+    left:84%;
+}
+#ad{
+    position:absolute;
+    left:63%;
+}
+#cm{
+    position:absolute;
+    left:45%;
+}
+#b{
+  position: relative;
+  width: 100px;
+
+}
+#sign1{
+left:83%;
+top:15%;
+position: absolute;
+color:chocolate;
+}
+</style>
+<script>
+function sel(){
+  window.location="sellerdashboard.html"
+}
+function lg(){
+  window.location="index.html"
+}
+</script>
+<body>
+    <div class="home">
+        <div class="bar">
+            <img id="logo" src="bar.png" >
+            <input id="search" type="text" placeholder="Search">
+            <button><i id="sea" class="fa fa-search"></i></button>
+            <button id="home">Home</button>
+            <button id="about">About</button>
+            <button id="resourse">Resources</button>
+            <button id="help">Help</button>
+            <button id="blog">Blog</button>
+            <button id="contact">Contact Us</button>
+            <button onclick="lg()"id="sign">Logout</button>
+            <button onclick="sel()" id="sign1">SELL PRODUCTS</button>
+            <label><span><h3 id="val" style="position: absolute;left: 95%;top: 4.5%;color: black;">0</h3></span></label>
+            <img src="myc.png" style="width: 140px;position: absolute;left: 90%;top:2%;height: 110px;">
+        </div>
+        <div id="line"></div>
+        <br>
+        <div id="list"></div>
+        <div id="list">
+                      <div id="card1"  class="card">
+                        <img src="ws12.jpg"  style="width:100%">
+                        <h1>Eco-Friendly Jute Bags</h1>
+                        <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                        <p>made from recycled jute material comes from jute industries</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <div class="select" style="width:200px;">
+                          <select style="position: absolute;left:75%;top: 78%;">
+                            <option value="1">qty</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                            <option value="5">4</option>
+                            <option value="6">5</option>
+                            <option value="7">6</option>
+                            <option value="8">7</option>
+                            <option value="9">8</option>
+                            <option value="10">9</option>
+                            <option value="11">10</option>
+                          </select>
+                        </div>
+                        <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card2" class="card">
+                          <img src="ws11.jpg"  style="width:100%">
+                          <h1>Eco-Friendly Jute Bags</h1>
+                          <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                          <p>made from recycled jute material comes from jute industries</p>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <div class="select" style="width:200px;">
+                            <select style="position: absolute;left:75%;top: 78%;">
+                              <option value="1">qty</option>
+                              <option value="2">1</option>
+                              <option value="3">2</option>
+                              <option value="4">3</option>
+                              <option value="5">4</option>
+                              <option value="6">5</option>
+                              <option value="7">6</option>
+                              <option value="8">7</option>
+                              <option value="9">8</option>
+                              <option value="10">9</option>
+                              <option value="11">10</option>
+                            </select>
+                          </div>
+                          <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card3" class="card">
+                          <img src="ws20.jpg"  style="width:100%">
+                          <h1>Smoothy Chairs</h1>
+                          <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                          <p>made from recycled plastics comes from industries,household plastics</p>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <div class="select" style="width:200px;">
+                            <select style="position: absolute;left:75%;top: 78%;">
+                              <option value="1">qty</option>
+                              <option value="2">1</option>
+                              <option value="3">2</option>
+                              <option value="4">3</option>
+                              <option value="5">4</option>
+                              <option value="6">5</option>
+                              <option value="7">6</option>
+                              <option value="8">7</option>
+                              <option value="9">8</option>
+                              <option value="10">9</option>
+                              <option value="11">10</option>
+                            </select>
+                          </div>
+                          <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card4" class="card">
+                          <img src="ws21.jpg"  style="width:100%">
+                          <h1>Plasto Bags</h1>
+                          <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                          <p>made from recycled plastics comes from various industries,factories,household plastics</p>
+                          <br>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <div class="select" style="width:200px;">
+                            <select style="position: absolute;left:75%;top: 78%;">
+                              <option value="1">qty</option>
+                              <option value="2">1</option>
+                              <option value="3">2</option>
+                              <option value="4">3</option>
+                              <option value="5">4</option>
+                              <option value="6">5</option>
+                              <option value="7">6</option>
+                              <option value="8">7</option>
+                              <option value="9">8</option>
+                              <option value="10">9</option>
+                              <option value="11">10</option>
+                            </select>
+                          </div>
+                          <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card5" class="card">
+                          <img src="ws23.jpg"  style="width:100%">
+                          <h1>Bottle Case</h1>
+                          <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                          <p>made from recycled plastics comes from various industries,factories,household plastics</p>
+                          <br>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <div class="select" style="width:200px;">
+                            <select style="position: absolute;left:75%;top: 78%;">
+                              <option value="1">qty</option>
+                              <option value="2">1</option>
+                              <option value="3">2</option>
+                              <option value="4">3</option>
+                              <option value="5">4</option>
+                              <option value="6">5</option>
+                              <option value="7">6</option>
+                              <option value="8">7</option>
+                              <option value="9">8</option>
+                              <option value="10">9</option>
+                              <option value="11">10</option>
+                            </select>
+                          </div>
+                          <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card6" class="card">
+                          <img src="ws22.jpg"  style="width:100%">
+                          <h1>Mobile Case</h1>
+                          <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                          <p>made from recycled plastics comes from various industries,factories,household plastics</p>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <div class="select" style="width:200px;">
+                            <select style="position: absolute;left:75%;top: 78%;">
+                              <option value="1">qty</option>
+                              <option value="2">1</option>
+                              <option value="3">2</option>
+                              <option value="4">3</option>
+                              <option value="5">4</option>
+                              <option value="6">5</option>
+                              <option value="7">6</option>
+                              <option value="8">7</option>
+                              <option value="9">8</option>
+                              <option value="10">9</option>
+                              <option value="11">10</option>
+                            </select>
+                          </div>
+                          <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card7" class="card">
+                            <img src="ws24.jpg"  style="width:100%">
+                            <h1>Maxi Sheets</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled Aluminium comes from industries</p>
+                            <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card8" class="card">
+                            <img src="ws25.jpg"  style="width:100%">
+                            <h1>Aluminium</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled Aluminium comes from industries</p>
+                            <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card9" class="card">
+                            <img src="ws26.jpg"  style="width:100%">
+                            <h1>Utensils</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled Aluminium comes from industries</p>
+                            <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card10" class="card">
+                            <img src="ws27.jpg"  style="width:100%">
+                            <h1>Slates</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled Ceramics comes from industries</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card11" class="card">
+                            <img src="ws28.jpg"  style="width:100%">
+                            <h1>Tiles</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled Ceramics comes from industries</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card12" class="card">
+                            <img src="ws29.jpg"  style="width:100%">
+                            <h1>concrete</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>                          
+                            <p>made from recycled concrete comes from industries,constructions,factories</p>
+                            <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card13" class="card">
+                            <img src="ws30.jpg"  style="width:100%">
+                            <h1>Tiles</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled ceramics comes from industries</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card14" class="card">
+                            <img src="ws31.jpg"  style="width:100%">
+                            <h1>Articles</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled ceramics comes from industries</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card15" class="card">
+                            <img src="ws32.jpg"  style="width:100%">
+                            <h1>Pillows</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled clothes comes from industries,households.</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card16" class="card">
+                            <img src="ws33.jpg"  style="width:100%">
+                            <h1>Matress</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled clothes comes from industries,households.</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card17" class="card">
+                            <img src="ws34.jpg"  style="width:100%">
+                            <h1>Fabrics</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled clothes comes from industries,households.</p>
+                            <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card18" class="card">
+                            <img src="ws35.jpg"  style="width:100%">
+                            <h1>Textiles</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled clothes comes from industries,households.</p>
+                            <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card19" class="card">
+                            <img src="ws36.jpg"  style="width:100%">
+                            <h1>Matresses</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled clothes comes from industries,households,fabrications,</p>
+                            <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button></p>
+                      </div>
+                      <div id="card20" class="card">
+                            <img src="ws37.jpg"  style="width:100%">
+                            <h1>CardBoards</h1>
+                            <a href="payment.html" ><img id="b" src="buy1.png"></a>
+                            <p>made from recycled papers,papers comes from industries,households,factories</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="select" style="width:200px;">
+                              <select style="position: absolute;left:75%;top: 78%;">
+                                <option value="1">qty</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                              </select>
+                            </div>
+                            <p><button onclick="modify()">Add to Cart</button onclick="modify()"></p>
+                      </div>
+        </div>
+        <br>
+        <div id="info">
+                <div class="footer-logo text-center">
+                        <a href="buyerform.html"><img id="logo" src="bar.png" alt=""></a>
+                </div>
+                <section class="footer-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget about-widget">
+                                        <h2>About</h2>
+                                        <p>Our main motto is waste recycle management ,eco-friendly industries,pollution-less cities,develop industries,factories,small,medium,large scale industries,private agencies,govt & non-govt organisations,women empowerment sectors,eco-entrepreneurs,interpreneurs,promotors,social activists,develop economic growth</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget about-widget">
+                                        <h2>Information</h2>
+                                        <ul>
+                                            <li><button id="in">About us</button></li>
+                                            <li><button id="in">Track orders</button></li>
+                                            <li><button id="in">Returns</button></li>
+                                            <li><button id="in">Jobs</button></li>
+                                            <li><button id="in">Shipping</button></li>
+                                            <li><button id="in">Programs</button></li>
+                                        </ul>
+                                        <ul>
+                                                <li><button id="in">Partners</button></li>
+                                                <li><button id="in">Bloggers</button></li>
+                                                <li><button id="in">Support</button></li>
+                                                <li><button id="in">Terms of Use</button></li>
+                                                <li><button id="in">Press</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="cm" class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget about-widget">
+                                        <h2>Community</h2>
+                                        <div class="fw-latest-post-widget">
+                                            <div class="lp-item">
+                                                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/1.jpg"></div>
+                                                <div class="lp-content">
+                                                    <h6>Recycling units</h6>
+                                                    <h6>Private Agencies</h6>
+                                                    <h6>Transport Agencies</h6>
+                                                </div>
+                                            </div>
+                                            <div class="lp-item">
+                                                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/2.jpg"></div>
+                                                <div class="lp-content">
+                                                    <h6>Packaging Department</h6>
+                                                    <h6>Recycle.org</h6>
+                                                    <h6>Testing Departments</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ad" class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget contact-widget">
+                                        <h2>Address</h2>
+                                        <div class="con-info">
+                                            <p>Reduce-Reuse-Recycle Company Ltd</p>
+                                        </div>
+                                        <div class="con-info">
+                                            <h5>Branches:</h5>
+                                            <h6>Hyderabad</h6>
+                                            <h6>Banglore</h6>
+                                            <h6>Chennai</h6>
+                                            <h6>Vizag</h6>
+                                            <h6>Vijayawada</h6>
+                                            <h6>Bhimavaram</h6>
+                                            <h6>Amaravati</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rf" class="col-lg-3 col-sm-6">
+                                        <div class="footer-widget contact-widget">
+                                            <h2>References</h2>
+                                            <div class="con-info">
+                                                    <h5>Contact :</h5>
+                                                    <p>+91 98676878888</p>
+                                                    <p>+91 98676876778</p>
+                                                </div>
+                                                <div class="con-info">
+                                                    <h5>Links:</h5>
+                                                    <p>recycle@gmail.com</p>
+                                                    <p>recycle@hotmail.com</p>
+                                                    <p>Linkedin.com/recycle</p>
+                                                    <p>Blogger.com/recycle</p>
+                                                    <p>recycle@yahoo.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <br>
+                            <p id="cr" class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved . Web platform developed and sponsored with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Recycle.org</a></p> 
+                        </div>
+                        <div class="icon-bar">
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                              </div>
+                    </section>
+        </div>
+        <script>
+          var cart=1;
+          function modify(){
+            document.getElementById("val").innerHTML = cart;
+            cart=cart+1;
+          }
+        </script>
+</body>
+</html>

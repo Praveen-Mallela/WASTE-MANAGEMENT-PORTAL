@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>Payment</title>
+<style>
+    .box{
+        color: black;
+        display: none;
+    }
+    .cc
+    {
+        top:15%;
+        width:80%;
+        left:18%;
+        position: absolute; 
+    }
+    .nb{  
+      position:absolute;
+      left:18%;
+      top:15%;
+    }
+    .up{ position: absolute;
+        left:18%;
+        top:15%;
+    }
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 15px;
+}
+.container {
+  position:absolute;
+  background-color: grey;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width:100%; 
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+#bill{
+background-color: skyblue;
+}
+#ps{
+    left:40%;
+    position: absolute;
+ 
+}
+#rad{
+    top:15%;
+    left:1%;
+    position:absolute;
+}
+#rad1{
+    position: absolute;
+    left:100%;
+}
+<!--css_net_banking-->
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: blue;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown:hover .dropbtn {
+  background-color: pink;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: pink  ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#ver{
+  position: absolute;
+  background-color: orange;
+  width:100px;
+  height:50px;
+  top:90%;
+  left:30%;
+  border:2px solid orange;
+}
+#line{
+    position: absolute;
+    border: 35px solid pink;
+    top:0%;
+    z-index: -1;
+    width: 100%;
+}
+#li{
+  border-left: 32.5vh solid orange;
+  position: absolute;
+  height: 120vh;
+  top:11%;
+  left:0%;
+  z-index: -1;
+}
+#l1{
+  position: absolute;
+  border: 1px solid black;
+  width: 33.5vh;
+  left:-20px;
+}
+#l2{
+  position: absolute;
+  border: 1px solid black;
+  width: 33.5vh;
+  left:-20px;
+}
+#l3{
+  position: absolute;
+  border: 1px solid black;
+  width: 33.5vh;
+  left:-20px;
+}
+#l4{
+  position: absolute;
+  border: 1px solid black;
+  width: 33.5vh;
+  left:-20px;
+}
+#des{
+  position: absolute;
+  left:17%;
+  top:20%;
+  border: 2px solid maroon;
+  padding-bottom: 10%;
+}
+#check{
+  position: absolute;
+  top:76%;
+  left:2%;
+  size: 100px;  
+}
+#terms{
+  position: absolute;
+  left:4%;
+}
+#sub{
+  position: absolute;
+  top:85%;
+  left:40%; 
+  background-color: blue;
+  border: 1px solid blue;
+  color: white;
+  width: 100px;
+  height:35px;
+}
+#rule{
+  position: absolute;
+  left: 7%;
+  bottom:50%;
+  font-size:45px;
+  visibility: hidden;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  var open=0;
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+      if(open == 1){
+        document.getElementById("rule").setAttribute("style","visibility:hidden");
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+      }
+      else{
+        alert("accept agreement & click 'continue'");
+      }
+    });
+});
+
+function submit(){
+  document.getElementById("des").setAttribute("style","visibility:hidden");
+  open=1;
+  document.getElementById("rule").setAttribute("style","visibility: visible;");
+}
+
+function paid(){
+  window.location="paid.html";
+}
+</script>
+</head>
+<body>
+    <div  id="ps"><h1 style="font-family: 'Times New Roman', Times, serif;"><strong>Payment Section</strong></h1></div>
+    <div id="line"></div>
+    <div id="rad" class="rad">
+        <label><input type="radio" name="colorRadio" value="cc"><h3 style="font-family: 'Times New Roman', Times, serif;">Credit/Debitcard</h3></label>
+        <br>
+        <div id="l1"></div>
+        <label><input id="rad3" type="radio" name="colorRadio" value="nb"><h3 style="font-family: 'Times New Roman', Times, serif;">Net Banking</h3></label>
+        <br>
+        <div id="l2"></div>
+        <label><input id="rad4" type="radio" name="colorRadio" value="up"><h3 style="font-family: 'Times New Roman', Times, serif;">UPI</h3></label>
+        <br>
+        <div id="l3"></div>
+        <label><input id="rad5" type="radio" name="colorRadio" value="emi"><h3 style="font-family: 'Times New Roman', Times, serif;">EMI</h3></label>
+        <label style="font-family: 'Times New Roman', Times, serif;">Unavailable</label>
+        <br>
+        <div id="l4"></div>
+        <br>
+        <label style="font-family: 'Times New Roman', Times, serif;">This order is not eligible for</label>
+        <label style="font-family: 'Times New Roman', Times, serif;"> on delivery (POD)</label>
+    </div>
+    <div id="des">
+        <h2 style="color: maroon;font-family: 'Times New Roman', Times, serif;font-size: 50px;;"><strong>Legal Payment Forum</strong></h2>
+        <h3><p style="font-family: 'Times New Roman', Times, serif;">Payment through the concerned options will be legal,takes under authorized scenario by government rules,validations,verfications and certified standards.</p><p style="font-family: 'Times New Roman', Times, serif;">And this involves customer agreement of accepting the terms and conditions of this transaction.The products and materials made through organised and perfectionate standards and these are manufactured ,delivered to customers or merchants as a bulk or limited as sutable means (transport,manufacturing,testing etc) avails fixed cost claims sustainable tax which includes GST and other taxes maintained by Govt of India. This is our responsibility to maintain quality in productss and materials by ISO,ISI standards and product will be delivered not exceeds 7 days.</p></h3>
+        <br>
+        <br>
+        <input id="check" type="checkbox"><h3 id="terms" style="font-family: 'Times New Roman', Times, serif;">I here by,accept and agree the terms and conditions maintained by organisation and  rules of gov of india.</h3>
+        <button type="submit" onclick="submit()" id="sub">Yes,Continue</button>
+        <h2 id="rule"><strong>Choose desired payment process , accomplish  transaction..</strong></h2>
+    </div>
+    <div class="cc box">
+            <div class="row">
+                    <div class="col-75">
+                      <div id="bill" class="container">
+                        <form action="/action_page.php">
+                          <div class="row">
+                            <div class="col-50">
+                              <h3>Billing Address</h3>
+                              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                              <input type="text" id="fname" name="firstname" placeholder="Name">
+                              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                              <input type="text" id="email" name="email" placeholder="email">
+                              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                              <input type="text" id="adr" name="address" placeholder="eg.city,street,area,region">
+                              <label for="city"><i class="fa fa-institution"></i> City</label>
+                              <input type="text" id="city" name="city" placeholder="city">
+                              <div class="row">
+                                <div class="col-50">
+                                  <label for="state">State</label>
+                                  <input type="text" id="state" name="state" placeholder="state">
+                                </div>
+                                <div class="col-50">
+                                  <label for="zip">Zip</label>
+                                  <input type="text" id="zip" name="zip" placeholder="Pin code">
+                                </div>
+                              </div>
+                            </div>
+                  
+                            <div class="col-50">
+                              <h3>Card Payment</h3>
+                              <label for="fname">Accepted Cards</label>
+                              <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                              </div>
+                              <label for="cname">Name on Card</label>
+                              <input type="text" id="cname" name="cardname" placeholder="Card Name">
+                              <label for="ccnum">Credit card number</label>
+                              <input type="text" id="ccnum" name="cardnumber" placeholder="number">
+                              <label for="expmonth">Exp Month</label>
+                              <input type="text" id="expmonth" name="expmonth" placeholder="month">
+                  
+                              <div class="row">
+                                <div class="col-50">
+                                  <label for="expyear">Exp Year</label>
+                                  <input type="text" id="expyear" name="expyear" placeholder="Year">
+                                </div>
+                                <div class="col-50">
+                                  <label for="cvv">CVV</label>
+                                  <input type="text" id="cvv" name="cvv" placeholder="cvv">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                          </label>
+                          <input onclick="paid()" value="submit" id="btn" class="btn">
+                        </form>
+                      </div>
+                    </div>
+                </div>
+    </div>
+    <div class="nb box">
+      <div class="dropdown">
+        <button class="dropbtn">Select bank
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">State bank of india</a>
+          <a href="#">Indian bank</a>
+          <a href="#">Andhra bank</a>
+          <a href="#">ICICI bank</a>
+          <a href="#">HDFC bank</a>
+          <a href="#">Ing bank</a>
+          <a href="#">Canara bank</a>
+          <a href="#">Bank  of baroda</a>
+          <a href="#">Punjab national bank</a>
+          <a href="#">KVB</a>
+          <a href="#">Indian Overseas bank</a>
+        </div>
+      </div>
+    </div>
+    <div class="up box">
+      <h3>Please Enter Existing UPI Id ?</h3>
+      <input type="text" placeholder="valid upi id">
+      <button id="ver"><strong>Verify</strong></button>
+    </div>
+    <div class="li" id="li"></div>
+</body>
+</html>

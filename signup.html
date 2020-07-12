@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+ function log(){
+   window.location="login.html";
+ }
+
+</script>
+<style>
+  .home{
+    background: url(or.jpg);
+    width: 100%;
+    height: 110vh;
+  }
+    #in{
+        background-color:grey;
+        font-weight: bold;
+        border: 2px solid grey;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left:96%;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+#info{
+    background-color: grey;
+    border: 2px solid black;
+}
+.item active{
+    height:50%;
+}
+#line{
+    border: 1px solid black;
+}
+
+button {
+  background-color: pink;
+  font-weight: bold;
+  border: 2px solid pink;
+  font-size: 17px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#logo{
+    width:8%;
+    height:8%;
+}
+#search{
+    position: absolute;
+    padding:10px 60px 10px 10px;
+    left:65%;
+    top:6%;
+}
+#home{
+left:12%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#about{
+left:20%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#resourse{
+left:30%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#help{
+left:42%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#blog{
+left:50%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#contact{
+left:56%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+#sign{
+left:85%;
+top:7%;
+position: absolute;
+color:chocolate;
+}
+.bar{
+    background-color: pink;
+}
+.line{
+    background-color: pink;
+}
+#sea{
+    position: absolute;
+    left:81%;
+    top:8%;
+    color:blue;
+}
+</style>
+<script>
+function sig(){
+    var nm=document.getElementById("nm").value;
+    var em=document.getElementById("em").value;
+    var ph=document.getElementById("ph").value;
+    var pss=document.getElementById("ps").value;
+    if(nm==""){
+        alert("all fields are required");
+    }
+    else if(em=="" ){
+        alert("all fields are required");
+    }
+    else if(ph==""){
+        alert("all fields are required");
+    }
+    else if(pss==""){
+        alert("all fields are required");
+    }
+    else{
+        window.location="buydashboard.html";
+    }
+   
+}
+</script>
+<body>
+    <div class="home">
+        <div class="bar">
+            <img id="logo" src="bar.png" >
+            <input id="search" type="text" placeholder="Search">
+            <i id="sea" class="fa fa-search"></i>
+            <button id="home">Home</button>
+            <button id="about">About</button>
+            <button id="resourse">Resources</button>
+            <button id="help">Help</button>
+            <button id="blog">Blog</button>
+            <button id="contact">Contact Us</button>
+           
+        </div>
+        <div id="line"></div>
+        <br>
+        
+        <div class="container">  
+            <h1>SIGN UP</h1>
+            <div class="uname">
+                <label ><b>Name</b></label>
+            </div>
+            <input type="text" id="nm" placeholder="name" name="uname" required>
+            <div class="uname">
+                <label ><b>Phone</b></label>
+            </div>
+            <input type="text" id="ph" placeholder="Phome" name="uname" required>
+            <br>
+            <div class="uname">
+                <label ><b>Email</b></label>
+            </div>
+            <input type="text" id="em" placeholder="email" name="uname" required>
+            <br>
+        
+            <label class="psw"><b>password</b></label>
+            <br>
+            <input type="password" id="ps" placeholder="Enter Password" name="psw" required>
+            <br>
+            <br>
+            <button onclick="sig()">Create Account</button>
+            <br>
+              </div>
+            
+              <br>
+        <div id="info">
+                <div class="footer-logo text-center">
+                        <a href="buyerform.html"><img id="logo" src="bar.png" alt=""></a>
+                </div>
+                <section class="footer-section">
+                        <div class="container">
+                            <div class="footer-logo text-center">
+                                <a href="index.html"><img src="./img/logo-light.png" alt=""></a>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget about-widget">
+                                        <h2>About</h2>
+                                        <p>Our main motto is waste recycle management ,eco-friendly industries,pollution-less cities,develop industries,factories,small,medium,large scale industries,private agencies,govt & non-govt organisations,women empowerment sectors,eco-entrepreneurs,interpreneurs,promotors,social activists,develop economic growth</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget about-widget">
+                                        <h2>Information</h2>
+                                        <ul>
+                                            <li><button id="in">About us</button></li>
+                                            <li><button id="in">Track orders</button></li>
+                                            <li><button id="in">Returns</button></li>
+                                            <li><button id="in">Jobs</button></li>
+                                            <li><button id="in">Shipping</button></li>
+                                            <li><button id="in">Programs</button></li>
+                                        </ul>
+                                        <ul>
+                                                <li><button id="in">Partners</button></li>
+                                                <li><button id="in">Bloggers</button></li>
+                                                <li><button id="in">Support</button></li>
+                                                <li><button id="in">Terms of Use</button></li>
+                                                <li><button id="in">Press</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget about-widget">
+                                        <h2>Community</h2>
+                                        <div class="fw-latest-post-widget">
+                                            <div class="lp-item">
+                                                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/1.jpg"></div>
+                                                <div class="lp-content">
+                                                    <h6>Recycling units</h6>
+                                                    <h6>Private Agencies</h6>
+                                                    <h6>Transport Agencies</h6>
+                                                </div>
+                                            </div>
+                                            <div class="lp-item">
+                                                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/2.jpg"></div>
+                                                <div class="lp-content">
+                                                    <h6>Packaging Department</h6>
+                                                    <h6>Recycle.org</h6>
+                                                    <h6>Testing Departments</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget contact-widget">
+                                        <h2>Address</h2>
+                                        <div class="con-info">
+                                            <p>Reduce-Reuse-Recycle Company Ltd</p>
+                                        </div>
+                                        <div class="con-info">
+                                            <h5>Branches:</h5>
+                                            <h6>Hyderabad</h6>
+                                            <h6>Banglore</h6>
+                                            <h6>Chennai</h6>
+                                            <h6>Vizag</h6>
+                                            <h6>Vijayawada</h6>
+                                            <h6>Bhimavaram</h6>
+                                            <h6>Amaravati</h6>
+                                        </div>
+                                        <div class="con-info">
+                                            <h5>Contact :</h5>
+                                            <p>+91 98676878888</p>
+                                            <p>+91 98676876778</p>
+                                        </div>
+                                        <div class="con-info">
+                                            <h5>Links:</h5>
+                                            <p>recycle@gmail.com</p>
+                                            <p>recycle@hotmail.com</p>
+                                            <p>Linkedin.com/recycle</p>
+                                            <p>Blogger.com/recycle</p>
+                                            <p>recycle@yahoo.com</p>
+                                            <p>recycle.outlook.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-bar">
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                              </div>
+                              <p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved . Web platform developed and sponsored with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Recycle.org</a></p> 
+                    </section>
+        </div>
+    </div>
+</body>
+</html>
